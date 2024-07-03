@@ -1,0 +1,15 @@
+# a=input("what is your name?")
+# print("My name is",a)
+
+#when in python programming we are taking input it is the form of String
+
+x=input("Enter first number")
+y=input("Enter second number")
+print(x+y)
+print(int(x)+int(y))
+
+print(int(x)-int(y))
+
+print(int(x)*int(y))
+
+print(int(x)/int(y))
