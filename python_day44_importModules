@@ -1,0 +1,29 @@
+import  math
+print(math.sqrt(9))
+
+
+#use of "from" keyword
+from math import pi,pow,sqrt,ceil
+num=23.890
+print(pi)
+print(pow(num,2))
+print(sqrt(num))
+print(ceil(num))
+
+#use of "as" keyword
+import math as m
+print(m.pi)
+print(m.pow(2,3))
+
+#dir keyword
+# import pandas as pd
+# print(dir(pd))
+
+#you can make your own py file and import it 
+#suppose in this file i am importing nabin.py file 
+
+from nabin import welcome,name
+welcome()
+print(name)
+
+
