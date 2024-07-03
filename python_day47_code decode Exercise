@@ -1,0 +1,54 @@
+# Write a python programming to translate a message into secrete code language. Use the rules below to translate normal English into secrete code language
+
+#coding
+
+#1)if the word contains at least 3 characters,remove the first letter and append it at the end
+#2)now append 3 random character,at the first and last and append
+#3)else
+#simply reverse the string
+
+#decoding
+#1)if the word contains less than 3 character just reverse it
+#2)else
+#remove 3 random character from start and end .Now remove the last letter and append itv to the begining
+
+#your program should ask the user weather you want to code or decode
+
+import random
+import string
+
+x = (input('Enter your choice either "coding" or "decoding":"'))
+st = input("Enter a string")
+match x:
+  case "coding":
+    words = st.split(" ")
+    nwords = []  #this is a empty string list
+    characters = string.ascii_letters + string.digits + string.punctuation
+    r1 = ''.join(random.choices(characters, k=3))
+    r2 = ''.join(random.choices(characters, k=3))
+    # r1 = "1qe"
+    # r2 = "8gh"
+    for word in words:
+      if (len(word) >= 3):
+        codeans = r1 + word[1:len(word)] + word[0:1] + r2
+        nwords.append(codeans)
+      else:
+        codeans = word[::-1]
+        nwords.append(codeans)
+
+    print(" ".join(nwords))
+
+  case "decoding":
+    words = st.split(" ")
+    ndewords = []
+    for word in words:
+      if (len(word) >= 3):
+        decodeans = word[-4:-3] + word[3:len(word) - 4]
+        ndewords.append(decodeans)
+
+      else:
+        decodeans = word[::-1]
+        ndewords.append(decodeans)
+
+    print(" ".join(ndewords))
+
