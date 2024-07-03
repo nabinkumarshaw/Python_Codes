@@ -1,0 +1,27 @@
+#use of finally keyword
+def func():
+  try:
+    arr = [2, 5, 9, 10]
+    i = int(input("Enter the index to retrive"))
+    print(arr[i])
+    return 1
+  except:
+    print("Array index out of bound exception")
+    return 0
+  finally:
+    print("This block is always Executed")
+
+
+func()
+'''If ther is only return statement in the function then the last print statement will not be executed
+but when finally is used then the last print statement will be executed'''
+
+
+# try:
+#   a=int(input("Enter a number between 4 to 9"))
+#   if(a<4 or a>9):
+#     raise ValueError("value should be between 4 to 9")
+#   else:
+#     print(a)
+# except:
+#   print("Invalid input")
