@@ -1,0 +1,16 @@
+#Break Statement (Terminate the loop)
+i=1
+while(i<=12):
+    if(i==11):
+     break
+    print(5,"*",i,"=",5*i)
+    i=i+1
+print (" ")
+
+#continue Statement (skip the current iteration)
+
+for k in range(1,15):
+  if(k==10):
+    print("skip 10")
+    continue
+  print(k,end=",")
