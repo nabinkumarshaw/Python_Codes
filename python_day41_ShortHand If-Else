@@ -1,0 +1,13 @@
+#short hand of writing the if else statement
+#syntax
+'''statement/print/expression if condition1 else statement/print/expression if condition2 else
+statement/print/expression'''
+
+#First Example
+result = "India won the worldcup"
+print("we won") if (result=="India won the worldcup") else print("we loose") if (result=="India loose the worldcup") else print("match drawn")
+
+#second Example
+a=int(input("Enter the first number"))
+b=int(input("Enter the second number"))
+print("a is greater then b") if(a>b) else print("b is greater then a") if(a<b) else print("a is equal to b")
