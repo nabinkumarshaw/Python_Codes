@@ -1,0 +1,18 @@
+a="Nabin"
+b="bhai"
+print(a+b)
+
+a="2"
+b="2"
+print(a+b)
+
+#explicit type conversion
+a="2"
+b="4"
+print(int(a)+int(b))
+print(int(a+b))      #result is string concetanation
+
+#implicit type conversion
+a=2.8
+b=8
+print(a+b)
