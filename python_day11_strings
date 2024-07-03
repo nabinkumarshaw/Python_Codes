@@ -1,0 +1,18 @@
+print('he said "I want to eat apple"')
+
+#when string is in multiple line we can use triple single or double quote
+a='''
+hey nabin
+whats up
+how you are 
+what happened
+'''
+
+print(a)
+
+name="Nabin"
+print(name[0])
+
+#using for loop
+for character in a:
+  print(character)
