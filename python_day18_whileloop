@@ -1,0 +1,16 @@
+#while loop execution
+
+#incrementing loop
+i=0
+while(i<4):
+  print(i)
+  i=i+1
+print(" ")
+
+#decrementing loop
+i=5
+while(i>=1):
+  print(i)
+  i=i-1
+else:
+  print("counter is 0")
