@@ -1,0 +1,4 @@
+animal="Tiger"
+print(animal)
+# animal[0]=N       #This cannot be possible as string is immutable
+# print(animal)
