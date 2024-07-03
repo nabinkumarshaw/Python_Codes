@@ -1,0 +1,28 @@
+list=["Nabin","prabin","Mohan","Bobby"]
+print(list)
+
+print(list[:0])
+print(list[:-4])
+print(list[1:-7])
+print(list[1:3])
+
+#checking weather the element is present or not
+if "sahil" in list:
+  print("yes")
+else:
+  print("no")
+
+#range of index
+print(list[1:4:2])   #list[start:end:jump]
+
+## List Comprehension
+
+list=[i+i for i in range(10)]
+print(list)
+
+flower=["Lotus","sunflower","marigold","Lily","jasmine"]
+print(flower)
+
+selected_flower=[i for i in flower if "s" in i]
+print(selected_flower)
+
