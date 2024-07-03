@@ -1,0 +1,13 @@
+# we can find out the length of the string using the len() function
+
+fruit="Mango"
+countchar=len(fruit)
+print("mango is a",countchar,"letter word" )
+
+
+#slicing
+name="nabin"
+print(name[0:4])
+print(name[1:2])
+print(name[-1:6])
+print(name[2:-1])
