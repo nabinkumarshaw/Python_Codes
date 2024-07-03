@@ -1,0 +1,26 @@
+x=5   #global variable
+
+def func1():
+  y=2      #local variable
+  print(y)
+  print(x)
+
+func1()
+print(f"The value of global variable x ix {x}")
+# print(y)   #This will provide an error because y is a local variable and is not accessible outside the function
+
+
+#use of global keyword
+#using global keyword we can change the value of global variable within the function
+
+x=5   #global variable
+
+def func():
+  global x 
+  x=90
+  y=2      #local variable
+  print(y)
+  
+
+func()
+print(x)
