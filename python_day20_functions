@@ -1,0 +1,19 @@
+#First example
+def arithmeticmean(a,b):
+  mean=(a+b)/2
+  print(mean)
+
+arithmeticmean(2,6)
+
+#second example
+def harmonicmean(x,y):
+  pass
+  #this pass means later i will write the code of this function
+
+#third example
+def average(num1,num2,num3):
+  sum=num1+num2+num3
+  avg=sum/3
+  print(avg)
+
+average(10,20,30)
