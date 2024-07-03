@@ -1,0 +1,23 @@
+#iterating over string
+name="Nabin"
+for i in name:
+  print(i,end=" ")
+print(" ")
+
+#iterating over list
+colors=["red","yellow","green","blue"]
+for color in colors:
+  print(color)
+print(" ")
+
+#range function
+for k in range(5):
+  print(k+1)        #prints 1 to 5 as k+1
+print(" ")
+
+for k in range(1,10):
+  print(k)
+print(" ")
+#printing odd number
+for k in range(1,10,2):
+  print(k)
