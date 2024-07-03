@@ -1,0 +1,14 @@
+print ("Kaun bnega Crorepati")
+print ("Welcome to KBC")
+amount=0
+question1 =["who is the current captain of team India in cricket"]
+print(question1)
+option=("Virat Kohli","Sachin Tendulkar","Rohit sharma","Rishav pant")
+print(option)
+ans=(input("enter your option"))
+if (ans=="Rohit sharma"):
+  print("congraculation you won 5 lakh")
+  amount=amount+5000
+else:
+  print("your answer is wrong")  
+print(amount)
