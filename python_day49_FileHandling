@@ -1,0 +1,17 @@
+#READING A FILE
+f=open("myfile.txt",'r')
+print(f.read())
+f.close()
+
+#WRITING TO A FILE(if file does not exist it will create a new file)
+f=open("myfile2.txt",'w')
+f.write("this is the file we are creating")
+f.close()
+
+#Appending to a file
+f=open("myfile2.txt",'a')
+f.write(" we are appending more text to it")
+f.close()
+
+#creating a file
+f=f=open("myfile4.txt",'x') #as mode is x it will create a new file
