@@ -1,0 +1,38 @@
+tup=(1,"Mohan",1.90,True)
+print(type(tup))
+print(tup)
+
+# in tuple if you pass only 1 element then it will be considerd as integer ,if you want to be as tuple then you have to pass comma after the element
+
+#tuples are immutable
+
+
+tup1=("Mohan","Rohan","Sohan","zoya","pradeep")
+
+#Accesing in tuple
+print(tup1[0])
+print(tup1[-2])
+
+#check for an items
+if "Sohan" in tup1:
+  print("sohan is present in tup1")
+else:
+  print("sohan is not present in tuple")
+
+#Range of index
+print(tup1[1:4])
+print(tup1[2:-2])
+
+
+#Manipulating Tuples
+# if you want to add,remove or change tuples items,then first you must convert the tuple to a list then perform operation on that list and convert it back to tuple
+
+countries=("India","pakistan","china","nepal")
+listcountries=list(countries)
+listcountries.append("russia")      #add items
+listcountries.pop(1)              #remove items
+listcountries[2]="Finland"
+countries=tuple(listcountries)
+print(countries)
+
+
