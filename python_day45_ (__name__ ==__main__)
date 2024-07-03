@@ -1,0 +1,8 @@
+def welcome():
+  print("you are welcome from my side")
+
+if __name__ == "__main__":
+  welcome()
+
+
+'''If you not provide __name__ == "__main__" then in main.py it will execute on only importing nabin.py file'''
