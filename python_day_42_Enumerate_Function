@@ -1,0 +1,25 @@
+
+
+marks = [70, 80, 90, 100,34]
+for mark in range(len(marks)):
+    print(marks[mark])
+    if(mark==3):
+      print("You are good"," ")
+
+
+#with using Enumarate function
+marks = [70, 80, 90, 100,34]
+for index,mark in enumerate(marks):
+  print(f"index is {index} and mark is {mark}")
+  if(index==3):
+    print("You score full")
+
+
+  #Another example of Enumurate Function
+  fruits=("mango","guava","pineapple","strawberry","Litchi")
+  for numbering,fruit in enumerate(fruits,start=1):
+    print(numbering,fruit)
+  print(type(fruits))
+
+
+   
