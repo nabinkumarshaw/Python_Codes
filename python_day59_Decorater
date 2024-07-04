@@ -1,0 +1,20 @@
+def greet(fx):
+  def mfx():
+    print("Hello Good Morning")
+    fx()
+    print("Hello Good Afternoon")
+  return mfx
+
+
+# def greet(fun):
+#   def inside():
+#     print("Nabin Nabin")
+#     fun()
+#   return inside
+@greet
+def hello():
+  print("Hello World")
+
+
+
+hello()
