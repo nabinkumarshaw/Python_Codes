@@ -1,0 +1,14 @@
+#Readline
+f=open('myfile.txt','r')
+while True:
+  line=f.readline()
+  print(line)
+  if not line:
+    break
+
+  #writeline
+  f=open('myfile.txt2','w')
+  line=["Nabin\n","Raj\n"]
+  f.writelines(line)
+    
+
