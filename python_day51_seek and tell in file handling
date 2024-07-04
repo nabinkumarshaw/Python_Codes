@@ -1,0 +1,17 @@
+f=open('myfile.txt','r')
+#use of seek function -->it will move upto the given byte position as passed on its parameter
+f.seek(10)
+nextline=f.read(5)
+print(nextline)
+
+
+#use of tell function -->it will return the current position with in the files in byte
+f=open('myfile.txt','r')
+f.seek(10)
+
+print(f.tell())  #it will return the current position with in the files in byte
+
+#use of trncate function -->it will truncate the file to the given byte position
+f=open('myfile2.txt','w')
+f.write("Hello world")
+print(f.truncate(3))
