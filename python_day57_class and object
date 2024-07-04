@@ -1,0 +1,15 @@
+class student:
+  name ="Rohan"
+  roll =21
+  sec ='e'
+  def info(self):   #the work of self is to take that object which we have called
+    print(f"Name is {self.name} and roll is {self.roll}")
+
+a = student()
+b=student()
+a.name="Nabin"
+a.roll=20
+a.sec='s' 
+
+a.info()
+b.info()
