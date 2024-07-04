@@ -1,0 +1,36 @@
+# def cube(n):
+#   return n*n*n
+
+# l=[2,4,7,9,3]
+# # newlist=[]
+# # for li in list:
+# #   newlist.append(cube(li))
+
+# # print(newlist)
+
+# #using map
+# newlist1=list(map(cube,l))
+# #using lambda the same thing
+# newlist2=list(map(lambda x:x*x*x,l))
+# print(newlist1)
+# print(newlist2)
+
+
+# #filter
+# l1=[2,4,1,7,34,234]
+# def fn(n):
+#   return n>31
+
+# newlist3=list(filter(fn,l1))
+# print(newlist3)
+
+#reduce
+
+from functools import reduce
+l2=[1,2,3,4,5]
+def mysum(a,b):
+  return a+b
+ 
+newl2=reduce(mysum,l2)
+print(newl2)
+
