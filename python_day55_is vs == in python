@@ -1,0 +1,34 @@
+#both is and == is used to comparable but their is slight difference
+
+#1)
+a=10
+b=10
+print(a is b)  #true   ##it match the exact location of object in memory
+print(a==b)    #true   ##it compares the value of the object
+
+#2)
+a="Nabin"
+b="Nabin"
+print(a is b)  #true
+print(a==b)    #true
+
+#3)
+a=(1,2,3)
+b=(1,2,3)
+print(a is b)  #true
+print(a==b)    #true
+
+#All the above cases are immutable in nature so is also gives true
+
+
+#3)
+a=[1,2,3]
+b=[1,2,3]
+print(a is b)  #false
+print(a==b)    #true
+
+#3)
+a=2
+b="2"
+print(a is b)  #false
+print(a==b)    #false
