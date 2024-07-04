@@ -1,0 +1,16 @@
+#this is the normal function
+# def avg(a,b):
+#   return (a+b)/2
+
+# print(avg(2,4))
+
+#same code with lambda function
+avg=lambda a,b: (a+b)/2
+print(avg(2,4))
+
+#we can use lambda function as to pass argument in another function tooo
+
+def printfx(fn,value):
+  return 5+fn(value)
+
+print(printfx(lambda val:val*val,2))
