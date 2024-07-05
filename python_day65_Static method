@@ -1,0 +1,11 @@
+class Math:
+  def __init__(self,num):
+    self.num=num
+    print(self.num)
+
+  @staticmethod
+  def add(a,b):
+    return a+b
+
+m= Math(5)
+print(m.add(4,6))
