@@ -1,0 +1,22 @@
+#1)Snake water Gun
+#2)snake,water,gun is a varation of childrens game called as "rock,paper,scissors" where players use hand to mark either snake,water or gun
+#3)snake beats water,water beats gun,gun beats snake
+#4)write a python programme using if else statement use proper functions to check for it
+
+#code
+import random
+print("For snake 1 ,For water 2, For gun 3")
+user=int(input("Enter your choice:"))
+computer=random.randint(1,3)
+print("computer choice", computer)
+def game():
+  if user==computer:
+    print("Match Drawn")
+  elif user==1 and computer==2 or user==3 and computer==1 or user==2 and computer==3:
+    print("You won")
+  elif user==2 and computer==1 or user==1 and computer==3 or user==3 and computer==2:
+    print("computer won")
+  else:
+    print("you entered wrong value")
+
+game()
