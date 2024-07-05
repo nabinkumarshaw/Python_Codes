@@ -1,0 +1,40 @@
+class myclass:
+  def __init__(self,value):   #constructor
+    self.value=value
+
+  
+  def show(self):             #Method
+    print(f"value is {self.value}")
+
+  @property                 # getter 
+  def getten_value(self):
+    return 10*self.value
+
+  @getten_value.setter        #setter
+  def setten_value(self,new_value):
+    self.value=new_value/10
+  
+
+obj= myclass(70)
+obj.setten_value=90
+print(obj.getten_value)
+obj.show()
+
+
+
+#second example
+# class student:
+#   def __init__(self,name):
+#     self.name=name
+
+#   def setName(self,newname):   #set a new name
+#     self.name=newname
+
+#   def getName(self):
+#     print(f"The name is {self.name} ")
+
+# obj1=student("Bob")
+# obj1.getName()
+# obj2=student("none")
+# obj2.setName("Nabin")
+# obj2.getName()
