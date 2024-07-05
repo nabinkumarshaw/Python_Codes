@@ -1,0 +1,15 @@
+class Employee:
+  def __init__(self,name,id):
+    self.name=name
+    self.id=420
+
+  def showdetails(self):
+    print(f"The name of the employee is {self.name} and id is {self.id}")
+
+class programmer(Employee):
+  def showlanguage(self):
+    print("The default language is python")
+    
+obj=programmer("nabin",90)
+obj.showdetails()
+obj.showlanguage()
