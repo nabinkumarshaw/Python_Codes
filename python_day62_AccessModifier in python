@@ -1,0 +1,23 @@
+#public access Modifier
+class Employee:
+  def __init__(self):
+    self.name="Nabin"
+
+e=Employee()
+print(e.name)
+
+#private access Modifier
+class Employee2:
+  def __init__(self):
+      self.__name = "Nabin shaw"  # Private attribute
+
+e = Employee2()
+print(e._Employee2__name)  # Accessing the private attribute using name mangling
+
+#protected access Modifier
+class Employee3:
+  def __init__(self):
+    self._name="Nabin"
+
+e=Employee3()
+print(e._name)
