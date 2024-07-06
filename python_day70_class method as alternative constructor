@@ -1,0 +1,19 @@
+class Employee:
+  def __init__(self,name,sal):
+    self.name=name
+    self.sal=sal
+
+  def show(self):
+    print(self.name,self.sal)
+
+
+  @classmethod
+  def fromstr(cls, strgiven):
+      return cls(strgiven.split("_")[0],int(strgiven.split("_")[1]))
+    
+e1=Employee("Mohan",20000)
+e1.show()
+stringform="nabin_30000"
+
+e2 = Employee.fromstr(stringform)
+e2.show()
