@@ -1,0 +1,24 @@
+'''write a library class with no_of_books and books as two instance variable.write a programme to create two a library from the library class and show how you can print all books,and a book and get the number of books using different method.'''
+
+#code
+class Library:
+  # no_of_books=1
+  # books=["English"]
+  def __init__(self):
+    self.no_of_books=0
+    self.books=[]
+  def add_books(self,book):
+    self.books.append(book)
+    self.no_of_books+=1
+
+  def showinfo(self):
+    print(f"The library has {self.no_of_books} books")
+    for book in self.books:
+      print(book)
+      
+l1=Library()
+l1.add_books("Hindi")
+l1.add_books("English")
+l1.add_books("Hindi")
+l1.add_books("English")
+l1.showinfo()
