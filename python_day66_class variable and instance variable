@@ -1,0 +1,19 @@
+class Bank:
+  interest=0.05 #this is a class variable in ever object this interest will be the same
+  def __init__(self,name,loan):
+    self.name=name  #these 2 were local variable
+    self.loan=loan
+
+  def calc_interest(self):
+    print(self.name)
+    return self.loan*self.interest
+
+b1=Bank("Rittik",500000)
+b1.interest=0.08  #as this is a class variable we can change it
+b1.name="prafhulla" # we can also change the instance variable too
+
+print(b1.calc_interest())
+b2=Bank("Anil",200000)
+print(b2.calc_interest())
+
+
